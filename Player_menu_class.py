@@ -14,13 +14,13 @@ class Menu:
 
     def _acquire_size(self):
         cls.clear_screen()
-        print("Enter the gameboard size (between 10 and 45) :")
+        print("Enter the gameboard size (between 10 and 40) :")
         x = input()
         try: 
             x = int(x)
         except ValueError: 
             x = self._acquire_size()
-        if(x < 10 or x > 45):
+        if(x < 10 or x > 40):
             x = self._acquire_size()
         return x
 
